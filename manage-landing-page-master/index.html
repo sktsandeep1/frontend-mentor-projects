@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Frontend Mentor | Manage landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="./images/logo.svg" alt="" />
+
+      <ul class="nav-item-1">
+        <li>Pricing</li>
+        <li>Product</li>
+        <li>About Us</li>
+        <li>Careers</li>
+        <li>Community</li>
+      </ul>
+
+      <div class="nav-item-2">
+        <div id="toggle">
+          <img
+            class="toggle_on"
+            src="./images/icon-hamburger.svg"
+            alt=""
+            onclick="toggle_on()"
+          />
+          <img
+            class="toggle_close"
+            src="./images/icon-close.svg"
+            alt=""
+            onclick="toggle_close()"
+          />
+        </div>
+        <div>
+          <button class="btn nav-btn">Get Started</button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div>
+        <h1>Bring everyone together to build better products.</h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view.
+        </p>
+        <button class="btn btn-btn">Get Started</button>
+      </div>
+      <img src="./images/illustration-intro.svg" alt="" />
+    </section>
+
+    <section class="contents">
+      <div class="sub-content-1">
+        <h1>What’s different about Manage?</h1>
+        <p>
+          Manage provides all the functionality your team needs, without the
+          complexity. Our software is tailor-made for modern digital product
+          teams.
+        </p>
+      </div>
+
+      <div class="sub-content-2">
+        <div class="content-items">
+          <div class="content-item">
+            <span>01</span>
+            <strong>Track company-wide progress</strong>
+          </div>
+
+          <p>
+            See how your day-to-day tasks fit into the wider vision. Go from
+            tracking progress at the milestone level all the way done to the
+            smallest of details. Never lose sight of the bigger picture again.
+          </p>
+        </div>
+
+        <div class="content-items">
+          <div class="content-item">
+            <span> 02 </span>
+            <strong>Advanced built-in reports</strong>
+          </div>
+
+          <p>
+            Set internal delivery estimates and track progress toward company
+            goals. Our customisable dashboard helps you build out the reports
+            you need to keep key stakeholders informed.
+          </p>
+        </div>
+
+        <div class="content-items">
+          <div class="content-item">
+            <span>03</span>
+            <strong> Everything you need in one place </strong>
+          </div>
+
+          <p>
+            Stop jumping from one service to another to communicate, store
+            files, track tasks and share documents. Manage offers an all-in-one
+            team productivity solution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h1>What they’ve said</h1>
+
+      <div class="testimonial-details">
+        <div class="testimonial-item">
+          <img src="./images/avatar-anisha.png" alt="" />
+          <label>Anisha Li</label>
+          <article>
+            “Manage has supercharged our team’s workflow. The ability to
+            maintain visibility on larger milestones at all times keeps everyone
+            motivated.”
+          </article>
+        </div>
+
+        <div class="testimonial-item">
+          <img src="./images/avatar-ali.png" alt="" />
+          <label>Ali Bravo</label>
+          <article>
+            “We have been able to cancel so many other subscriptions since using
+            Manage. There is no more cross-channel confusion and everyone is
+            much more focused.”
+          </article>
+        </div>
+
+        <div class="testimonial-item">
+          <img src="./images/avatar-richard.png" alt="" />
+          <label>Richard Watts</label>
+          <article>
+            “Manage allows us to provide structure and process. It keeps us
+            organized and focused. I can’t stop recommending them to everyone I
+            talk to!”
+          </article>
+        </div>
+
+        <div class="testimonial-item">
+          <img src="./images/avatar-shanai.png" alt="" />
+          <label>Shanai Gough</label>
+          <article>
+            “Their software allows us to track, manage and collaborate on our
+            projects from anywhere. It keeps the whole team in-sync without
+            being intrusive.”
+          </article>
+        </div>
+      </div>
+      <button class="btn btn-btn">Get Started</button>
+    </section>
+
+    <section class="work-details">
+      <h1>Simplify how your team works today.</h1>
+      <button class="btn btn-btn">Get Started</button>
+    </section>
+
+    <footer>
+      <div class="footer-details">
+        <div class="footer-details-1">
+          <img class="footer-logo" src="./images/logo.svg" alt="" />
+
+          <ul class="socials">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+
+        <ul class="footer-items">
+          <li>Home</li>
+          <li>Pricing</li>
+          <li>Products</li>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Community</li>
+          <li>Privacy Policy</li>
+        </ul>
+
+        <div class="contact-us">
+          <input type="text" placeholder="Updates in your inbox…" />
+          <button class="btn">Go</button>
+        </div>
+      </div>
+      <p>Copyright 2020. All Rights Reserved</p>
+    </footer>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+    <script>
+      // --------------------------------------------------------------------------- //
+      // ======================= nav toggle ======================= //
+      // --------------------------------------------------------------------------- //
+      const toggles = document.querySelector("#toggle");
+      const activeNav = document.querySelector(".nav-item-1");
+
+      const toggle_on = () => {
+        const toggle_on = (document.querySelector(".toggle_on").style.display =
+          "none");
+        const toggle_close = (document.querySelector(
+          ".toggle_close"
+        ).style.display = "initial");
+
+        activeNav.classList.add("active-nav");
+      };
+
+      const toggle_close = () => {
+        const toggle_close = (document.querySelector(
+          ".toggle_close"
+        ).style.display = "none");
+
+        const toggle_on = (document.querySelector(".toggle_on").style.display =
+          "initial");
+
+        activeNav.classList.remove("active-nav");
+      };
+
+      // --------------------------------------------------------------------------- //
+      // ======================= testimonial slider ======================= //
+      // --------------------------------------------------------------------------- //
+      /* Setting the default slide start index: */
+      /* We call the function that is implemented below: */
+      /* Increase the index by 1 - show the next slide: */
+      /* Decrease the index by 1 - show the previous slide: */
+      /* Set the current slide: */
+      /* Flip function: */
+      /* We refer to the elements with the class name "item", that is, to the pictures: */
+      /* Checking the number of slides: */
+      /* Loop through each slide in a for loop: */
+      /* Making an element block: */
+    </script>
+  </body>
+</html>
