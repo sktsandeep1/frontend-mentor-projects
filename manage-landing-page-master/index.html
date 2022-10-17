@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
 
-    <title>Frontend Mentor | Manage landing page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
+   
+   
+ <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <title>Frontend Mentor | Manage landing page</title>
+  
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+   <nav> 
       <img src="./images/logo.svg" alt="" />
 
       <ul class="nav-item-1">
@@ -129,61 +127,73 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> 
 
-    <section class="testimonials">
-      <h1>What they’ve said</h1>
+  <!-- Testimonial -->
 
-      <div class="testimonial-details">
-        <div class="testimonial-item">
-          <img src="./images/avatar-anisha.png" alt="" />
+  <section class="testimonials">
+    <h1>What they’ve said</h1>
+
+    <div class="slider">
+      <div class="slide ">
+        <img src="./images/avatar-anisha.png" alt="" />
+        <div class="testimonial-details">
           <label>Anisha Li</label>
           <article>
             “Manage has supercharged our team’s workflow. The ability to
-            maintain visibility on larger milestones at all times keeps everyone
-            motivated.”
-          </article>
-        </div>
-
-        <div class="testimonial-item">
-          <img src="./images/avatar-ali.png" alt="" />
-          <label>Ali Bravo</label>
-          <article>
-            “We have been able to cancel so many other subscriptions since using
-            Manage. There is no more cross-channel confusion and everyone is
-            much more focused.”
-          </article>
-        </div>
-
-        <div class="testimonial-item">
-          <img src="./images/avatar-richard.png" alt="" />
-          <label>Richard Watts</label>
-          <article>
-            “Manage allows us to provide structure and process. It keeps us
-            organized and focused. I can’t stop recommending them to everyone I
-            talk to!”
-          </article>
-        </div>
-
-        <div class="testimonial-item">
-          <img src="./images/avatar-shanai.png" alt="" />
-          <label>Shanai Gough</label>
-          <article>
-            “Their software allows us to track, manage and collaborate on our
-            projects from anywhere. It keeps the whole team in-sync without
-            being intrusive.”
+            maintain visibility on larger milestones at all times keeps
+            everyone motivated.”
           </article>
         </div>
       </div>
-      <button class="btn btn-btn">Get Started</button>
-    </section>
 
-    <section class="work-details">
+      <div class="slide">
+        <img src="./images/avatar-ali.png" alt="" />
+        <div class="testimonial-details">
+          <label>Ali Bravo</label>
+          <article>
+            “We have been able to cancel so many other subscriptions since
+            using Manage. There is no more cross-channel confusion and
+            everyone is much more focused.”
+          </article>
+        </div>
+      </div>
+
+
+      <div class="slide">
+        <img src="./images/avatar-richard.png" alt="" />
+        <div class="testimonial-details">
+          <label>Richard Watts</label>
+          <article>
+            “Manage allows us to provide structure and process. It keeps
+            us organized and focused. I can’t stop recommending them to
+            everyone I talk to!”
+          </article>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="./images/avatar-shanai.png" alt="" />
+        <div class="testimonial-details">
+          <label>Shanai Gough</label>
+          <article>
+            “Their software allows us to track, manage and collaborate on
+            our projects from anywhere. It keeps the whole team in-sync
+            without being intrusive.”
+          </article>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <button class="btn btn-btn">Get Started</button>
+  </section>
+
+  <section class="work-details">
       <h1>Simplify how your team works today.</h1>
-      <button class="btn btn-btn">Get Started</button>
+      <button class="btn btn-btn" data-type="inverted">Get Started</button>
     </section>
 
-    <footer>
+  <footer>
       <div class="footer-details">
         <div class="footer-details-1">
           <img class="footer-logo" src="./images/logo.svg" alt="" />
@@ -215,52 +225,54 @@
       <p>Copyright 2020. All Rights Reserved</p>
     </footer>
 
-    <!-- <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="//unpkg.com/a11y-slider@latest/dist/a11y-slider.js" ></script>
+  <script>
+    // --------------------------------------------------------------------------- //
+    // ======================= nav toggle ======================= //
+    // --------------------------------------------------------------------------- //
+    const toggles = document.querySelector("#toggle");
+    const activeNav = document.querySelector(".nav-item-1");
 
-    <script>
-      // --------------------------------------------------------------------------- //
-      // ======================= nav toggle ======================= //
-      // --------------------------------------------------------------------------- //
-      const toggles = document.querySelector("#toggle");
-      const activeNav = document.querySelector(".nav-item-1");
+    const toggle_on = () => {
+      const toggle_on = (document.querySelector(".toggle_on").style.display =
+        "none");
+      const toggle_close = (document.querySelector(
+        ".toggle_close"
+      ).style.display = "initial");
 
-      const toggle_on = () => {
-        const toggle_on = (document.querySelector(".toggle_on").style.display =
-          "none");
-        const toggle_close = (document.querySelector(
-          ".toggle_close"
-        ).style.display = "initial");
+      activeNav.classList.add("active-nav");
+    };
 
-        activeNav.classList.add("active-nav");
-      };
+    const toggle_close = () => {
+      const toggle_close = (document.querySelector(
+        ".toggle_close"
+      ).style.display = "none");
 
-      const toggle_close = () => {
-        const toggle_close = (document.querySelector(
-          ".toggle_close"
-        ).style.display = "none");
+      const toggle_on = (document.querySelector(".toggle_on").style.display =
+        "initial");
 
-        const toggle_on = (document.querySelector(".toggle_on").style.display =
-          "initial");
-
-        activeNav.classList.remove("active-nav");
-      };
+      activeNav.classList.remove("active-nav");
+    };
 
       // --------------------------------------------------------------------------- //
       // ======================= testimonial slider ======================= //
       // --------------------------------------------------------------------------- //
-      /* Setting the default slide start index: */
-      /* We call the function that is implemented below: */
-      /* Increase the index by 1 - show the next slide: */
-      /* Decrease the index by 1 - show the previous slide: */
-      /* Set the current slide: */
-      /* Flip function: */
-      /* We refer to the elements with the class name "item", that is, to the pictures: */
-      /* Checking the number of slides: */
-      /* Loop through each slide in a for loop: */
-      /* Making an element block: */
-    </script>
-  </body>
+      const slider = new A11YSlider(document.querySelector(".slider"), {
+        adaptiveHeight: false,
+        dots: true,
+        centerMode: true,
+        arrows: false,
+        responsive: {
+          480: {
+            dots: false, // dots enabled 1280px and up
+          },
+        },
+      });
+  </script>
+</body>
+
 </html>
